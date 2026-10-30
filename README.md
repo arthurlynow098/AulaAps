@@ -4,7 +4,7 @@
 
 <p align="center">Calculadora de áreas e perímetros com classes abstratas, herança e polimorfismo.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="C# · Windows Forms · POO" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="C# · Windows Forms · POO" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **Interface** | Eventos e interação com o formulário. | [Abrir interface →](SoFormasAps/SoFormasAPS/WfaFormas/Form1.cs) |
-| **Contrato** | Classe base das figuras geométricas. | [Abrir contrato →](SoFormasAps/SoFormasAPS/WfaFormas/FormaGeometrica.cs) |
-| **Cálculos** | Implementação de uma figura concreta. | [Abrir cálculos →](SoFormasAps/SoFormasAPS/WfaFormas/Circunferencia.cs) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>Interface</strong></td><td>Eventos e interação com o formulário.</td><td><a href="SoFormasAps/SoFormasAPS/WfaFormas/Form1.cs">Abrir interface →</a></td></tr>
+<tr><td><strong>Contrato</strong></td><td>Classe base das figuras geométricas.</td><td><a href="SoFormasAps/SoFormasAPS/WfaFormas/FormaGeometrica.cs">Abrir contrato →</a></td></tr>
+<tr><td><strong>Cálculos</strong></td><td>Implementação de uma figura concreta.</td><td><a href="SoFormasAps/SoFormasAPS/WfaFormas/Circunferencia.cs">Abrir cálculos →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
