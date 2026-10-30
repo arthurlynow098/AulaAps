@@ -1,49 +1,52 @@
 <p align="center">
-  <img src="assets/banner-v2.png" alt="AulaAps" width="100%">
+  <img src="assets/identity/banner.png" alt="AulaAps" width="100%">
 </p>
 
 <p align="center">Calculadora de áreas e perímetros com classes abstratas, herança e polimorfismo.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="C# · Windows Forms · POO" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <a id="explore-o-projeto"></a>
 
-![Explore o projeto](assets/docs/section-01.svg)
+## Por onde começar
 
-![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-<table width="100%">
-<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
-<tr><td><strong>Interface</strong></td><td>Eventos e interação com o formulário.</td><td><a href="SoFormasAps/SoFormasAPS/WfaFormas/Form1.cs">Abrir interface →</a></td></tr>
-<tr><td><strong>Contrato</strong></td><td>Classe base das figuras geométricas.</td><td><a href="SoFormasAps/SoFormasAPS/WfaFormas/FormaGeometrica.cs">Abrir contrato →</a></td></tr>
-<tr><td><strong>Cálculos</strong></td><td>Implementação de uma figura concreta.</td><td><a href="SoFormasAps/SoFormasAPS/WfaFormas/Circunferencia.cs">Abrir cálculos →</a></td></tr>
-</table>
+- **[Interface](SoFormasAps/SoFormasAPS/WfaFormas/Form1.cs)** — Eventos e interação com o formulário.
+- **[Contrato](SoFormasAps/SoFormasAPS/WfaFormas/FormaGeometrica.cs)** — Classe base das figuras geométricas.
+- **[Cálculos](SoFormasAps/SoFormasAPS/WfaFormas/Circunferencia.cs)** — Implementação de uma figura concreta.
+
 
 <a id="visão-geral"></a>
 
-![Visão geral](assets/docs/section-02.svg)
+## Visão geral
 
 A aplicação permite selecionar diferentes figuras planas — circunferência, quadrado, retângulo e as três variações de triângulo (equilátero, isósceles e retângulo) — e calcula automaticamente área e perímetro a partir de uma hierarquia de classes coesa derivada de FormaGeometrica.
 
 <a id="recursos"></a>
 
-![Recursos](assets/docs/section-03.svg)
+## Recursos
 
-| Recurso | Como funciona |
-|---|---|
-| Classe base abstrata | FormaGeometrica define o contrato comum (CalcularArea e CalcularPerimetro) para todas as figuras. |
-| Polimorfismo em triângulos | A classe Triangulo especializa-se em TE (Equilátero), TI (Isósceles) e TR (Retângulo), cada qual com sua fórmula exata. |
-| Figuras circulares e quadriláteras | Classes dedicadas para Circunferencia, Quadrado e Retangulo encapsulam raio, lado, base e altura. |
-| Interface dinâmica | O formulário Form1 habilita apenas os campos de entrada necessários para a figura geométrica selecionada. |
-| Precisão matemática | Uso de Math.PI, Math.Pow e Math.Sqrt diretamente nas classes de domínio. |
+**Classe base abstrata**<br>
+FormaGeometrica define o contrato comum (CalcularArea e CalcularPerimetro) para todas as figuras.
+
+**Polimorfismo em triângulos**<br>
+A classe Triangulo especializa-se em TE (Equilátero), TI (Isósceles) e TR (Retângulo), cada qual com sua fórmula exata.
+
+**Figuras circulares e quadriláteras**<br>
+Classes dedicadas para Circunferencia, Quadrado e Retangulo encapsulam raio, lado, base e altura.
+
+**Interface dinâmica**<br>
+O formulário Form1 habilita apenas os campos de entrada necessários para a figura geométrica selecionada.
+
+**Precisão matemática**<br>
+Uso de Math.PI, Math.Pow e Math.Sqrt diretamente nas classes de domínio.
 
 <a id="tecnologias"></a>
 
-![Tecnologias](assets/docs/section-04.svg)
+## Tecnologias
 
 - **C# e .NET Framework 4.7.2** para modelagem orientada a objetos e cálculos geométricos;
 - **Windows Forms (WfaFormas)** para construção da janela nativa de interação no Windows;
@@ -73,7 +76,7 @@ O formulário Windows Forms instancia a subclasse correspondente à escolha do u
 ```text
 AulaAps/
 ├── assets/
-│   └── banner-v2.png               Banner do projeto
+│   └── identity/banner.png               Banner do projeto
 ├── SoFormasAps/SoFormasAPS/
 │   ├── SoFormas.sln                          Solução do Visual Studio
 │   └── WfaFormas/
@@ -91,7 +94,7 @@ AulaAps/
 
 <a id="como-executar"></a>
 
-![Como executar](assets/docs/section-05.svg)
+## Como executar
 
 1. Clone o repositório no Windows:
    ```powershell
@@ -102,12 +105,12 @@ AulaAps/
 
 <a id="decisões-técnicas"></a>
 
-![Decisões técnicas](assets/docs/section-06.svg)
+## Decisões técnicas
 
 - **Abstração de domínio:** separar cada forma em sua própria classe evita métodos gigantes com switch/case e permite adicionar novas figuras sem alterar as existentes (Princípio Aberto-Fechado).
 - **Hierarquia em dois níveis para triângulos:** agrupar TE, TI e TR sob Triangulo reaproveita atributos comuns e especializa apenas o cálculo que muda entre eles.
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
