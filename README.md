@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/identity/banner.png" alt="AulaAps" width="100%">
-</p>
+<p align="center"><img src="assets/aulaaps-banner.jpg" width="100%" alt="AulaAps"></p>
 
 <p align="center">Calculadora de áreas e perímetros com classes abstratas, herança e polimorfismo.</p>
 
