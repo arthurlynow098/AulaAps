@@ -4,21 +4,33 @@
 
 <p align="center">Calculadora de áreas e perímetros com classes abstratas, herança e polimorfismo.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C%23-C52E36?style=flat-square" alt="C#">
-  <img src="https://img.shields.io/badge/Windows%20Forms-24272E?style=flat-square" alt="Windows Forms">
-  <img src="https://img.shields.io/badge/POO-24272E?style=flat-square" alt="POO">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="C# · Windows Forms · POO" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **Interface** | Eventos e interação com o formulário. | [Abrir interface →](SoFormasAps/SoFormasAPS/WfaFormas/Form1.cs) |
+| **Contrato** | Classe base das figuras geométricas. | [Abrir contrato →](SoFormasAps/SoFormasAPS/WfaFormas/FormaGeometrica.cs) |
+| **Cálculos** | Implementação de uma figura concreta. | [Abrir cálculos →](SoFormasAps/SoFormasAPS/WfaFormas/Circunferencia.cs) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 A aplicação permite selecionar diferentes figuras planas — circunferência, quadrado, retângulo e as três variações de triângulo (equilátero, isósceles e retângulo) — e calcula automaticamente área e perímetro a partir de uma hierarquia de classes coesa derivada de FormaGeometrica.
 
-## Recursos
+<a id="recursos"></a>
+
+![Recursos](assets/docs/section-03.svg)
 
 | Recurso | Como funciona |
 |---|---|
@@ -28,7 +40,9 @@ A aplicação permite selecionar diferentes figuras planas — circunferência, 
 | Interface dinâmica | O formulário Form1 habilita apenas os campos de entrada necessários para a figura geométrica selecionada. |
 | Precisão matemática | Uso de Math.PI, Math.Pow e Math.Sqrt diretamente nas classes de domínio. |
 
-## Tecnologias
+<a id="tecnologias"></a>
+
+![Tecnologias](assets/docs/section-04.svg)
 
 - **C# e .NET Framework 4.7.2** para modelagem orientada a objetos e cálculos geométricos;
 - **Windows Forms (WfaFormas)** para construção da janela nativa de interação no Windows;
@@ -58,7 +72,7 @@ O formulário Windows Forms instancia a subclasse correspondente à escolha do u
 ```text
 AulaAps/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── SoFormasAps/SoFormasAPS/
 │   ├── SoFormas.sln                          Solução do Visual Studio
 │   └── WfaFormas/
@@ -74,7 +88,9 @@ AulaAps/
 
 </details>
 
-## Como executar
+<a id="como-executar"></a>
+
+![Como executar](assets/docs/section-05.svg)
 
 1. Clone o repositório no Windows:
    ```powershell
@@ -83,7 +99,9 @@ AulaAps/
 2. Abra a solução SoFormasAps\SoFormasAPS\SoFormas.sln no **Visual Studio** (com workload de desenvolvimento para Desktop com .NET Framework 4.7.2).
 3. Pressione **F5** (ou execute msbuild seguido de WfaFormas.exe) para abrir a interface e testar os cálculos geométricos.
 
-## Decisões técnicas
+<a id="decisões-técnicas"></a>
+
+![Decisões técnicas](assets/docs/section-06.svg)
 
 - **Abstração de domínio:** separar cada forma em sua própria classe evita métodos gigantes com switch/case e permite adicionar novas figuras sem alterar as existentes (Princípio Aberto-Fechado).
 - **Hierarquia em dois níveis para triângulos:** agrupar TE, TI e TR sob Triangulo reaproveita atributos comuns e especializa apenas o cálculo que muda entre eles.
