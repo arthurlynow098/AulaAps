@@ -1,24 +1,26 @@
 <p align="center">
-  <img src="assets/banner.png" alt="SoFormas APS" width="100%">
+  <img src="assets/project-animal.png" alt="Emblema de AulaAps" width="144" height="144">
 </p>
+
+<h1 align="center">AulaAps</h1>
+
+<p align="center">Calculadora de áreas e perímetros com classes abstratas, herança e polimorfismo.</p>
 
 <p align="center">
-  Calculadora geométrica desktop em C# e Windows Forms construída sobre herança, classes abstratas e polimorfismo.
+  <img src="https://img.shields.io/badge/C%23-C52E36?style=flat-square" alt="C#">
+  <img src="https://img.shields.io/badge/Windows%20Forms-24272E?style=flat-square" alt="Windows Forms">
+  <img src="https://img.shields.io/badge/POO-24272E?style=flat-square" alt="POO">
 </p>
 
-<p align="center">
-  <img alt="C#" src="https://img.shields.io/badge/C%23-.NET_Framework_4.7.2-C52E36?style=for-the-badge&logo=dotnet&logoColor=white">
-  <img alt="Windows Forms" src="https://img.shields.io/badge/Interface-Windows_Forms-11120F?style=for-the-badge&logo=windows&logoColor=C52E36">
-  <img alt="POO" src="https://img.shields.io/badge/Paradigma-POO-18181B?style=for-the-badge">
-</p>
+<p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
-## Sobre o projeto
+---
 
-O projeto **SoFormas APS** (AulaAps) foi desenvolvido na disciplina de Análise e Projeto de Sistemas (Fatec/Etec Fernando Prestes) para demonstrar como conceitos de **Programação Orientada a Objetos (POO)** resolvem problemas matemáticos reais sem espalhar condicionais rígidas pela interface gráfica.
+## Visão geral
 
 A aplicação permite selecionar diferentes figuras planas — circunferência, quadrado, retângulo e as três variações de triângulo (equilátero, isósceles e retângulo) — e calcula automaticamente área e perímetro a partir de uma hierarquia de classes coesa derivada de FormaGeometrica.
 
-## Principais recursos
+## Recursos
 
 | Recurso | Como funciona |
 |---|---|
@@ -30,39 +32,35 @@ A aplicação permite selecionar diferentes figuras planas — circunferência, 
 
 ## Tecnologias
 
-<p>
-  <img alt="C Sharp" src="https://img.shields.io/badge/C%23-C52E36?style=flat-square&logo=dotnet&logoColor=white">
-  <img alt=".NET Framework" src="https://img.shields.io/badge/.NET_Framework_4.7.2-11120F?style=flat-square&logo=dotnet&logoColor=C52E36">
-  <img alt="Windows Forms" src="https://img.shields.io/badge/Windows_Forms-C52E36?style=flat-square&logo=windows&logoColor=white">
-  <img alt="Visual Studio" src="https://img.shields.io/badge/Visual_Studio-11120F?style=flat-square&logo=visualstudio&logoColor=C52E36">
-</p>
-
 - **C# e .NET Framework 4.7.2** para modelagem orientada a objetos e cálculos geométricos;
 - **Windows Forms (WfaFormas)** para construção da janela nativa de interação no Windows;
 - **MSBuild / Visual Studio Solution (SoFormas.sln)** para organização e compilação do projeto.
 
-## Arquitetura
+<details>
+<summary>Arquitetura</summary>
 
-`mermaid
+```mermaid
 flowchart LR
-    A[FormaGeometrica] --> B[Circunferencia]
-    A --> C[Quadrado]
-    A --> D[Retangulo]
-    A --> E[Triangulo]
-    E --> F[TE · Equilátero]
-    E --> G[TI · Isósceles]
-    E --> H[TR · Retângulo]
-`
+    A["FormaGeometrica"] --> B["Circunferencia"]
+    A --> C["Quadrado"]
+    A --> D["Retangulo"]
+    A --> E["Triangulo"]
+    E --> F["TE · Equilátero"]
+    E --> G["TI · Isósceles"]
+    E --> H["TR · Retângulo"]
+```
 
 O formulário Windows Forms instancia a subclasse correspondente à escolha do usuário, preenche suas propriedades geométricas e invoca os métodos polimórficos de cálculo sem precisar conhecer os detalhes algébricos de cada figura.
 
-## Estrutura do repositório
+</details>
 
-`	ext
+<details>
+<summary>Estrutura do repositório</summary>
+
+```text
 AulaAps/
 ├── assets/
-│   ├── banner.png                            Banner principal do projeto
-│   └── project-animal.png                    Símbolo da tartaruga
+│   └── project-animal.png          Emblema do projeto
 ├── SoFormasAps/SoFormasAPS/
 │   ├── SoFormas.sln                          Solução do Visual Studio
 │   └── WfaFormas/
@@ -74,14 +72,16 @@ AulaAps/
 │       ├── TE.cs / TI.cs / TR.cs             Especializações de triângulo
 │       └── Form1.cs                          Interface gráfica Windows Forms
 └── README.md
-`
+```
 
-## Executando o código
+</details>
+
+## Como executar
 
 1. Clone o repositório no Windows:
-   `powershell
+   ```powershell
    git clone https://github.com/arthurlynow098/AulaAps.git
-   `
+   ```
 2. Abra a solução SoFormasAps\SoFormasAPS\SoFormas.sln no **Visual Studio** (com workload de desenvolvimento para Desktop com .NET Framework 4.7.2).
 3. Pressione **F5** (ou execute msbuild seguido de WfaFormas.exe) para abrir a interface e testar os cálculos geométricos.
 
@@ -92,4 +92,8 @@ AulaAps/
 
 ---
 
-<p align="center"><sub>Estudo · construção · evolução</sub><br><a href="https://github.com/arthurlynow098">Perfil</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a> · <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a></p>
+<p align="center">
+  <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
+  <a href="https://arthurentsev.vercel.app/">Portfólio</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
+</p>
